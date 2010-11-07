@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp ~/chef-setup/solo.rb /etc/chef/solo.rb
+chef-solo -c /etc/chef/solo.rb -j ~/chef-setup/server.json -r http://s3.amazonaws.com/chef-solo/bootstrap-latest.tar.gz
