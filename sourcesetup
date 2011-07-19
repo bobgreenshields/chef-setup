@@ -4,8 +4,9 @@ apt-get update
 apt-get install build-essential zlib1g zlib1g-dev libreadline5 libreadline5-dev libssl-dev
 #sudo apt-get update
 #sudo apt-get install build-essential zlib1g zlib1g-dev libreadline5 libreadline5-dev libssl-dev
-mkdir ruby-src && cd ruby-src
-wget ftp://ftp.ruby-lang.org//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz
+#mkdir ruby-src && cd ruby-src
+cd ruby-src
+#wget ftp://ftp.ruby-lang.org//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz
 tar -zxvf ruby-1.9.2-p0.tar.gz && cd ruby-1.9.2-p0
 ./configure
 make && make install
