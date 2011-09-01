@@ -2,12 +2,12 @@
 
 apt-get update
 apt-get --assume-yes install build-essential zlib1g zlib1g-dev libreadline5 libreadline5-dev libssl-dev wget
-#sudo apt-get update
-#sudo apt-get install build-essential zlib1g zlib1g-dev libreadline5 libreadline5-dev libssl-dev
-#mkdir ruby-src && cd ruby-src
-cd ruby-src
+#mkdir /tmp/src
+#mkdir /tmp/src/ruby && cd /tmp/src/ruby
+cd /tmp/src/ruby
 #wget ftp://ftp.ruby-lang.org//pub/ruby/1.9/ruby-1.9.2-p180.tar.gz
 tar -zxvf ruby-1.9.2-p180.tar.gz && cd ruby-1.9.2-p180
 ./configure
 make && make install
-#make && sudo make install
+gem install ohai
+gem install chef
