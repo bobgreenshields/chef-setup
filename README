@@ -1,3 +1,3 @@
 Run with
 
-sudo ~/chef-setup/chefsetup 2>$1 | tee ~/chef-setup/setup.log
+sudo ~/chef-setup/chefsetup 2>&1 | tee ~/chef-setup/setup.log
