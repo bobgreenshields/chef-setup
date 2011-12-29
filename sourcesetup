@@ -1,20 +1,17 @@
 #!/bin/bash
 
-RUBY="ruby-1.9.3-p0"
+RUBY="ruby-1.9.2-p290"
 YAML="yaml-0.1.4"
 
-apt-get update
-apt-get --assume-yes install build-essential zlib1g zlib1g-dev libreadline6 libreadline6-dev libssl-dev wget
+sudo apt-get update
+sudo apt-get --assume-yes install build-essential zlib1g zlib1g-dev libreadline6 libreadline6-dev libssl-dev wget
 
-if [ ! -d /usr/local/bin/$RUBY ]; then
-	mkdir /usr/local/bin/$RUBY
-fi
 
 if [ ! -d /tmp/src ]; then
 	mkdir /tmp/src
 fi
-cd /tmp/src
 
+#cd /tmp/src
 #wget http://pyyaml.org/download/libyaml/$YAML.tar.gz
 #tar xvfz $YAML.tar.gz
 #cd $YAML
@@ -25,7 +22,8 @@ cd /tmp/src
 cd /tmp/src
 wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/$RUBY.tar.gz
 tar -zxvf $RUBY.tar.gz && cd $RUBY
-./configure --prefix=/usr/local/bin/$RUBY --enable-pthread --enable-shared
-make && make install
+./configure --prefix=/usr
+make
+sudo make install
 #gem install ohai
 #gem install chef
