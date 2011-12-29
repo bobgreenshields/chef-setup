@@ -1,3 +1,7 @@
 Run with
 
 sudo ~/chef-setup/chefsetup 2>&1 | tee ~/chef-setup/setup.log
+
+run sourcesetup without the sudo i.e.
+
+~/chef/chef-setup/sourcesetup 2>&1 | tee ~/chef/chef-setup/setup.log
