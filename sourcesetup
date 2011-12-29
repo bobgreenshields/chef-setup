@@ -25,5 +25,6 @@ tar -zxvf $RUBY.tar.gz && cd $RUBY
 ./configure --prefix=/usr
 make
 sudo make install
-#gem install ohai
-#gem install chef
+sudo gem update --system
+sudo gem install ohai
+sudo gem install chef
