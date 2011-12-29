@@ -15,17 +15,17 @@ if [ ! -d /tmp/src ]; then
 fi
 cd /tmp/src
 
-wget http://pyyaml.org/download/libyaml/$YAML.tar.gz
-tar xvfz $YAML.tar.gz
-cd $YAML
-./configure --prefix=/usr/local/bin/$RUBY
-make
-make install
+#wget http://pyyaml.org/download/libyaml/$YAML.tar.gz
+#tar xvfz $YAML.tar.gz
+#cd $YAML
+#./configure --prefix=/usr/local/bin/$RUBY
+#make
+#make install
 #
-#cd /tmp/src
-#wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/$RUBY.tar.gz
-#tar -zxvf $RUBY.tar.gz && cd $RUBY
-#./configure --prefix=/usr/local/bin/$RUBY --enable-pthread --enable-shared
-#make && make install
+cd /tmp/src
+wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/$RUBY.tar.gz
+tar -zxvf $RUBY.tar.gz && cd $RUBY
+./configure --prefix=/usr/local/bin/$RUBY --enable-pthread --enable-shared
+make && make install
 #gem install ohai
 #gem install chef
