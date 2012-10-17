@@ -6,7 +6,8 @@ and mv it to /etc/apt/apt.conf.d
 
 Run chefsetup with
 
-sudo ~/chef-setup/chefsetup 2>&1 | tee ~/chef-setup/setup.log
+mkdir .chef
+sudo ~/chef-setup/chefsetup 2>&1 | tee ~/.chef/setup.log
 
 run sourcesetup without the sudo i.e.
 
