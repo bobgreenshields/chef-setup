@@ -1,4 +1,10 @@
-Run with
+If you want to use the apt proxy
+
+chmod 01proxy to 644
+chown 01proxy to root:root
+and mv it to /etc/apt/apt.conf.d
+
+Run chefsetup with
 
 sudo ~/chef-setup/chefsetup 2>&1 | tee ~/chef-setup/setup.log
 
