@@ -1,1 +1,2 @@
+Acquire::HTTP::Proxy::private-ppa.launchpad.net "DIRECT";
 Acquire::http::Proxy "http://galactica:3142";
