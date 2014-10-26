@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo -v
+
+sudo apt-get --assume-yes install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libcurl4-openssl-dev python-software-properties wget
+
+sudo apt-get --assume-yes install ruby2.0
