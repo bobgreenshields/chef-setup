@@ -16,4 +16,4 @@ run sourcesetup without the sudo i.e.
 You can specify multiple cookbook paths in your solo.rb file using an array
 
 file_cache_path "/var/chef-solo"
-cookbook_path ["/var/chef-solo/cookbooks", "/var/chef-solo/site-cookbooks"]
+cookbook_path ["/home/bobg/.chef/cookbooks", "/home/bobg/.chef/hh-cookbooks"]
