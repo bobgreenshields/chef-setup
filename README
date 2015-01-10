@@ -12,3 +12,9 @@ sudo ~/chef-setup/chefsetup 2>&1 | tee ~/.chef/setup.log
 run sourcesetup without the sudo i.e.
 
 ~/chef/chef-setup/sourcesetup 2>&1 | tee ~/chef/chef-setup/setup.log
+
+You can specify multiple cookbook paths in your solo.rb file using an array
+
+
+file_cache_path "/var/chef-solo"
+cookbook_path ["/var/chef-solo/cookbooks", "/var/chef-solo/site-cookbooks"]
