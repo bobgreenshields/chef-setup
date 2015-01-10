@@ -15,4 +15,7 @@ sudo ln -s /usr/bin/erb2.0 /usr/bin/erb
 sudo gem update --system
 sudo gem pristine --all
 
+sudo mkdir /var/log/chef
+sudo touch /var/log/chef/solo.log
+
 sudo gem install chef --no-ri --no-rdoc
