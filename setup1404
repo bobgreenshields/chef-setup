@@ -6,12 +6,15 @@ sudo apt-get --assume-yes install curl zlib1g-dev build-essential libssl-dev lib
 
 sudo apt-get --assume-yes install ruby2.0 ruby2.0-dev
 
-sudo rm /usr/bin/ruby /usr/bin/gem /usr/bin/irb /usr/bin/rdoc /usr/bin/erb
+sudo rm /usr/bin/ruby /usr/bin/gem /usr/bin/irb /usr/bin/rake /usr/bin/rdoc /usr/bin/erb /usr/bin/ri /usr/bin/testrb
 sudo ln -s /usr/bin/ruby2.0 /usr/bin/ruby
 sudo ln -s /usr/bin/gem2.0 /usr/bin/gem
 sudo ln -s /usr/bin/irb2.0 /usr/bin/irb
+sudo ln -s /usr/bin/rake2.0 /usr/bin/rake
 sudo ln -s /usr/bin/rdoc2.0 /usr/bin/rdoc
 sudo ln -s /usr/bin/erb2.0 /usr/bin/erb
+sudo ln -s /usr/bin/ri2.0 /usr/bin/ri
+sudo ln -s /usr/bin/testrb2.0 /usr/bin/testrb
 sudo gem update --system
 sudo gem pristine --all
 
